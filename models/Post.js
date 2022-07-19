@@ -15,17 +15,25 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     comment: {
       type: DataTypes.STRING,
     },
     user_id: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      references: {
+        model: 'user',
+        key: "id"
+      }
     },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
+      defaultValue: Date.now,
     },
   },
   {
