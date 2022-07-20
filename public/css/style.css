@@ -1,24 +1,58 @@
+html {
+  background-color: #ccc;
+
+}
+
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
+.button {
+  background-color: darkgrey;
+  border: 3px;
+  border-radius: 2px;
+  width: 70px;
+  padding: 5px;
   cursor: pointer;
-  color: #1b89bc;
+  color: #ffffff;
   text-decoration: none;
   font-size: 100%;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+.button:hover {
+  color: #614b4b;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.post-title {
+  background-color: darkgrey;
+  border: 5px;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 36px;
+}
+
+.post-title:hover {
+  box-shadow: inset -3px -3px 2px rgb(94, 94, 94);
+}
+
+.post-title a {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 10px;
+}
+
+.shadowbox {
+  box-shadow: 3px 3px 5px black;
+}
+
+#main-logo {
+  font: 600;
+  font-weight: 500;
+  margin-left: 20px;
+  font-style: italic;
+  padding: 10px;
+  background-color: #ccc;
+  border-radius: 15px;
+  box-shadow: 10px 7px 1px black;
 }

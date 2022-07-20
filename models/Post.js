@@ -20,7 +20,7 @@ Post.init(
       allowNull: false
     },
     comment: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(600),
     },
     user_id: {
       type: DataTypes.INTEGER,

@@ -34,7 +34,6 @@ router.get('/posts/:id', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
         },
       ],
     });
@@ -43,6 +42,7 @@ router.get('/posts/:id', async (req, res) => {
 
     res.render('posts', {
       ...post,
+      postData,
       logged_in: req.session.logged_in
     });
   } catch (err) {

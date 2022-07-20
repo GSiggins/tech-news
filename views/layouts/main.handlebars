@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="bg-dark bg-opacity-25" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,20 +7,21 @@
   <title>Tech Den</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
-</head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1></h1>
-        <a href="/">Tech Den</a>
+  <div class=" bg-dark bg-opacity-50 flex-column justify-space-around">
+    <header class="bg-dark bg-opacity-50 display-flex justify-space-around align-center p-2 border-bottom border-secondary">
+      <h1 class='' id="main-logo">
+        Tech Den
       </h1>
       <nav>
+        <a href="/"><button class='button'>HOME</button></a> |
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile"><button class='button'>PROFILE</button></a> |
+        <button class="button" id="logout">LOGOUT</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login"> <button class='button'> LOGIN </button></a>
         {{/if}}
       </nav>
     </header>
@@ -29,7 +30,7 @@
       {{{ body }}}
     </main>
     <footer>
-      
+
     </footer>
   </div>
 
